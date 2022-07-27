@@ -1,0 +1,138 @@
+body{
+    width:100vw;
+    /* position:relative; */
+    
+}
+
+h1 {
+    text-align:center;
+}
+
+h3 {
+    text-align:center;
+}
+
+.card{
+    /* background-color:red; */
+    overflow:hidden;
+    text-align:center; 
+    width:20%;
+    /* height:100%; */
+    object-fit:cover;
+    border-radius:75px;
+    position:relative;
+    background-color:beige;
+    display:flex;
+    flex-direction:column;
+    /* padding-top:20px; */
+    overflow:hidden;
+}
+
+/* .img{
+    object-fit:fill; 
+    width:50%;
+} */
+
+.contenitore{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.descrizione{
+    padding-top:10px;
+    display:flex;
+    justify-content:space-around;
+    flex-shrink: 1;
+    /* flex-direction:column; */
+    padding-top:30px;
+}
+
+.descrizione1{
+    display:flex;
+    justify-content:space-around;
+    flex-direction:column;
+}
+
+.descrizione2{
+    display:flex;
+    align-items: center;
+}
+
+.descrizione3{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.button{
+    /* display:flex; */
+    background-color:gold;
+    border-radius:15px;
+    width:50%;
+    padding-top:5px;
+    padding-bottom:5px;
+    /* justify-content: center; */
+    text-align: center;
+}
+
+.navbar{
+    background-color:beige;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    border-radius:50px;
+    position:relative;
+    width:75%;
+    padding:10px;
+    font-size:15px;
+}
+
+.logo{
+    width:20%;
+}
+
+.navbutton{
+    /* display:flex; */
+    background-color:gold;
+    border-radius:15px;
+    width:10%;
+    padding-top:5px;
+    padding-bottom:5px;
+    /* justify-content: center; */
+    text-align: center;
+}
+
+.navbuttonbig{
+    /* display:flex; */
+    background-color:gold;
+    border-radius:25px;
+    width:10%;
+    padding-top:15px;
+    padding-bottom:15px;
+    padding-left:10px;
+    padding-right:10px;
+    /* justify-content: center; */
+    text-align: center;
+    font-size: 20px;
+}
+
+.provaquery{
+    display:flex;
+    background-color: beige;
+    width:60%;
+}
+
+.paragrafo{
+    display:flex;
+    flex-direction:column;
+    padding:10px;
+}
+
+@media only screen and (max-width: 800px) {
+    .provaquery {
+      flex-direction: column-reverse;
+
+    }
+  }

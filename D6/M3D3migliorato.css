@@ -1,0 +1,83 @@
+body{
+    background-color: aliceblue;
+}
+
+.myimg{
+    object-fit: cover; 
+    height:100%; 
+    width:100%;
+}
+
+.mostra{
+    display:none;
+}
+
+button:hover{
+   color:blue;
+}
+
+#nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:2;
+}
+
+#jumbotron{
+    background-image:url("metal.avif");
+    color:white;
+    margin-bottom:20px;
+}
+
+.genere{
+    position:absolute;
+    top:2px;
+    right:4px;
+    color:red;
+    background-color:black;
+    font-weight:bolder;
+    border:solid red 1px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#addtrack:hover{
+box-shadow:5px 5px 5px;
+transform: scale(120%);
+transition:all .3s ease;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+.fadein{
+    animation: fadeInAnimation 1s ease-in;
+}
+
+.bottonefadein{
+    opacity:0;
+}
+
+.bottonefadein:hover{
+    opacity:1;
+    transition:.3s all  ease-in-out;
+}
+
+.bottonefade{
+    opacity:0;
+}
+
+.bottonefade:hover{
+    opacity:1;
+    transition:.3s all ease;
+}
+
+.bottonefade:not(:hover){
+    opacity:0;
+    transition:.3s all ease;
+}

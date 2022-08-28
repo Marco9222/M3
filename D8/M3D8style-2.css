@@ -1,0 +1,166 @@
+body {
+    background-color: lightblue;
+    position: relative;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ball {
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    animation: rimbalzo 1s ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    z-index: 2;
+}
+
+@keyframes rimbalzo {
+    /*step 1*/
+    0% {
+        transform: translateY(0px);
+    }
+    /*step 2*/
+    5% {
+        transform: translateY(25px);
+    }
+    /*step 3*/
+    25% {
+        transform: translateY(200px);
+        height:60px;
+    }
+    /*step 4*/
+    35% {
+        transform: translateY(270px);
+        height:65px;
+    }
+    /*step 5*/
+    50% {
+        transform: translateY(300px);
+        height:65px;
+    }
+    /*step 6*/
+    55% {
+        transform: translateY(300px);
+        height:20px;
+    }
+
+    /*step 7*/
+    60% {
+        transform: translateY(270px);
+        height:30px;
+    }
+
+    /*step 8*/
+    75% {
+        transform: translateY(200px);
+        height:45px;
+    }
+
+    /*step 9*/
+    80% {
+        transform: translateY(50px);
+        height:47px;
+    }
+
+    /*step 10*/
+    90% {
+        transform: translateY(25px);
+        height:50px;
+    }
+
+    /*step 11*/
+    100% {
+    transform: translateY(0px);
+    height:50px;
+}
+}
+
+.container2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.shadow{
+    background-color: grey;
+    opacity:0.1;
+    border-radius:50%;
+    width: 50px;
+    height: 10px;
+    position:absolute;
+    top:425px;
+    left:736px;
+    
+    animation: ombra 1s ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@keyframes ombra {
+    /*step 1*/
+    0% {
+        height:10px;
+    }
+
+    /*step 2*/
+    5% {
+        height:10px;
+    }
+
+    /*step 3*/
+    25% {
+        height:10px;
+    }
+
+    /*step 4*/
+    35% {
+        height:10px;
+    }
+
+    /*step 5*/
+    50% {
+        height:0px;
+    }
+
+    /*step 6*/
+    55% {
+        height:0px;
+    }
+
+    /*step 7*/
+    60% {
+        height:3px;
+    }
+
+    /*step 8*/
+    75% {
+        height:5px;
+    }
+
+    /*step 9*/
+    80% {
+        height:10px;
+    }
+
+    /*step 10*/
+    90% {
+        height:10px;
+    }
+
+    /*step 11*/
+    100% {
+    height:10px;
+}
+}
